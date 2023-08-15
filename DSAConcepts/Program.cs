@@ -1,29 +1,37 @@
 ﻿
 string input= String.Empty;
-
-do
+try
 {
-    DisplayMenu();
-    switch (input)
-    {
-        case "1":
-            {
-                Console.WriteLine("Going to perform the bitwise operations.");
-                break;
-            }
-        case "#":
-            {
-                Console.WriteLine("Exiting the application. Thankyou for using");
-                break;
-            }
 
-        default:
-            {
-                Console.WriteLine("****** Invalid Input ******\nPlease enter the valid input.");
-                break;
-            }
-    }
-} while (input != "#");
+    do
+    {
+        DisplayMenu();
+        switch (input)
+        {
+            case "1":
+                {
+                    Console.WriteLine("Going to perform the bitwise operations.");
+                    break;
+                }
+            case "#":
+                {
+                    Console.WriteLine("Exiting the application. Thankyou for using");
+                    break;
+                }
+
+            default:
+                {
+                    Console.WriteLine("****** Invalid Input ******\nPlease enter the valid input.");
+                    break;
+                }
+        }
+    } while (input != "#");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Exception Message: ", ex.Message);
+    throw;
+}
 
 
 void DisplayMenu()
@@ -34,6 +42,6 @@ void DisplayMenu()
 
     Console.WriteLine("#. Exit\n");
     Console.WriteLine("Please enter your input");
-    input = Convert.ToString(Console.ReadLine());
+    input = Console.ReadLine();
 
 }
