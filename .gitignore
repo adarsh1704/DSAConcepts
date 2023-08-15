@@ -3,7 +3,8 @@
 ################################################################################
 
 /.vs/DSAConcepts
-/BitManipulation/bin/Debug/net6.0
-/BitManipulation/obj/Debug/net6.0
-/BitManipulation/obj
-/DSAConcepts/obj
+/BitManipulation/bin/
+/BitManipulation/obj/
+*.v2
+/DSAConcepts/bin/
+/DSAConcepts/obj/
