@@ -1,39 +1,77 @@
-﻿
-string input= String.Empty;
+﻿using BitwiseOperations;
 
-do
+
+namespace DSAConcepts 
 {
-    DisplayMenu();
-    switch (input)
+    public class Program
     {
-        case "1":
+        
+        static string input = String.Empty;
+        public static void Main()
+        {
+            Program dm = new Program();
+            try
             {
-                Console.WriteLine("Going to perform the bitwise operations.");
-                break;
-            }
-        case "#":
-            {
-                Console.WriteLine("Exiting the application. Thankyou for using");
-                break;
-            }
 
-        default:
-            {
-                Console.WriteLine("****** Invalid Input ******\nPlease enter the valid input.");
-                break;
+                do
+                {
+                    
+                    dm.DisplayMenu();
+
+                    switch (input)
+                    {
+                        case "1":
+                            {
+
+                                Console.WriteLine("Going to perform the bitwise operations.\n");
+                                Complements();
+                                break;
+                            }
+                        case "#":
+                            {
+                                Console.WriteLine("Thankyou for using the application. \nExiting the application now.");
+                                break;
+                            }
+
+                        default:
+                            {
+                                Console.WriteLine("****** Invalid Input ******\nPlease enter the valid input.");
+                                break;
+                            }
+                    }
+                } while (input != "#");
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception Message: ", ex.Message);
+                throw;
+            }
+        }
+
+
+
+
+        public void DisplayMenu()
+        {
+
+            Console.WriteLine("******** Application Menu ********\n");
+
+            Console.WriteLine("1. Compliment Operations\n");
+
+            Console.WriteLine("#. Exit\n");
+            Console.WriteLine("Please enter your input");
+            input = Console.ReadLine();
+
+        }
+
+        static void Complements()
+        {
+            Complement complement = new Complement();
+
+            Console.WriteLine("Please Enter a Binary number: ");
+            string BinaryNum = Console.ReadLine();
+            string res = complement.OnesComp(BinaryNum);
+            Console.WriteLine("One's complement: " + res);
+        }
     }
-} while (input != "#");
-
-
-void DisplayMenu()
-{
-
-    Console.WriteLine("******** Application Menu ********\n");
-    Console.WriteLine("1. Bitwise Operations\n");
-
-    Console.WriteLine("#. Exit\n");
-    Console.WriteLine("Please enter your input");
-    input = Convert.ToString(Console.ReadLine());
-
 }

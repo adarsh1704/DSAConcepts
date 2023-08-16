@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSAConcepts", "DSAConcepts\DSAConcepts.csproj", "{1D0217ED-E4D6-4B8A-9E9A-AAFB9175D65F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DSAConcepts", "DSAConcepts\DSAConcepts.csproj", "{1D0217ED-E4D6-4B8A-9E9A-AAFB9175D65F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitManipulation", "BitManipulation\BitManipulation.csproj", "{44E9EF95-502E-4561-99CE-786BAAB38A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitManipulation", "BitManipulation\BitManipulation.csproj", "{44E9EF95-502E-4561-99CE-786BAAB38A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitwiseOperations", "BitwiseOperations\BitwiseOperations.csproj", "{6C1597B2-2689-4594-B280-12E0A4B4456E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{44E9EF95-502E-4561-99CE-786BAAB38A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44E9EF95-502E-4561-99CE-786BAAB38A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44E9EF95-502E-4561-99CE-786BAAB38A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1597B2-2689-4594-B280-12E0A4B4456E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1597B2-2689-4594-B280-12E0A4B4456E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1597B2-2689-4594-B280-12E0A4B4456E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1597B2-2689-4594-B280-12E0A4B4456E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
