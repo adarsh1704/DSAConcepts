@@ -8,3 +8,5 @@
 *.v2
 /DSAConcepts/bin/
 /DSAConcepts/obj/
+/BitwiseOperations/obj/
+/BitwiseOperations/bin/
