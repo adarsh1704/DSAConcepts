@@ -70,8 +70,10 @@ namespace DSAConcepts
 
             Console.WriteLine("Please Enter a Binary number: ");
             string BinaryNum = Console.ReadLine();
-            string res = complement.OnesComp(BinaryNum);
-            Console.WriteLine("One's complement: " + res);
+            string oneCompResult = complement.OnesComp(BinaryNum);
+            Console.WriteLine("One's complement: " + oneCompResult);
+            string twoCompResult = complement.TowsComp(BinaryNum);
+            Console.WriteLine("Two's complement: " + twoCompResult);
         }
     }
 }
